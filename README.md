@@ -1,5 +1,7 @@
 # esercizi-deluge
 
+Creare una repository su github, con nome "esercizio X deluge", X sta per il numero dell'esercizio, e per ogni repo creare un file con estensione '*.dg'. Scrivere la funzione su ambiente zoho crm e una volta testata la funzione copiarla nel file con estensione dg su github eseguendo un commit e push da riga di comando.
+
 ## ES 1:
 Realizzare un'automazione con funzione associata per:
 - recuperi due numeri A e B, da due campi di un modulo;

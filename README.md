@@ -1,7 +1,10 @@
 # esercizi-deluge
 
 ## ES 1:
-Realizzare uno script che, inseriti due numeri A e B, calcoli il resto della divisione A/B, salvi il risultato su una variabile C e stampi il messaggio: "Il resto della divisione A/B è: C".
+Realizzare un'automazione con funzione associata per:
+- recuperi due numeri A e B, da due campi di un modulo;
+- calcoli il resto della divisione A/B;
+- il risultato campo "Risultato" deve salvare il messaggio testuale: "Il resto della divisione A/B è: C".
 
 ## ES 2:
 Dichiarare una lista di 10 numeri. Per ogni elemento della lista verificare che:

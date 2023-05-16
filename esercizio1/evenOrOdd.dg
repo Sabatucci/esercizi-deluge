@@ -1,0 +1,20 @@
+nums = {3, 4, 8, 9, 24, 67, 89, 1, 23, 56, -3};
+
+/*Dichiarare una lista di 10 numeri. Per ogni elemento della lista verificare che: L'elemento sia un numero compreso tra 0 e 50: Se no, stampare messaggio di errore; L'elemento sia un numero pari: Se no, stampare messaggio "numero X dispari" Altrimenti, stampare messaggio "numero X pari"*/
+
+for each n in nums
+{
+	if ( n > 50 || n < 0 ) 
+    {
+		info n + " non rientra tra 0 e 50";
+	} else {
+        
+	if (n % 2 = 0)
+		{
+			info n + " pari";
+        } else 
+        {
+			info n + " dispari";
+        }
+	}
+}

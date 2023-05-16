@@ -15,9 +15,9 @@ Se no, stampare messaggio "numero X dispari"
 Altrimenti, stampare messaggio "numero X pari"
 	
 ## ES 3:
-- Creare un campo "status" all'interno del modulo Azienda e Contatti. Quando in azienda il campo status viene aggiornato in "sospeso" aggiornare il campo omonimo di tutti I contatti associati a quella azienda con il medesimo valore. Il campo è una picklist e il valore inserito nei contatti (sospeso) non è presente sui valori della picklist. Cosa succede?
-- Creare un modulo "Progetti" con un campo valuta "valore". Quando la fase di una trattativa passa a "chiusa vinta" creare un record omonimo all'interno del modulo Progetti e, nella stessa chiamata, popolare il campo "valore" con lo stesso valore della trattativa.
+- Creare un campo "status" all'interno del modulo Azienda e Contatti. Quando in azienda il campo status viene aggiornato in "sospeso" aggiornare il campo omonimo di tutti I contatti associati a quella azienda con il medesimo valore. Il campo "status" è una picklist ['sospeso', 'avviato', 'concluso'] e il valore inserito nei contatti (sospeso) se non è presente sui valori della picklist, cosa succede?
+- Creare un modulo "Richieste_Trattative" con un campo valuta "valore" e un lookup collegato alle trattative (modulo Affari). Quando la fase di una trattativa passa a "chiusa vinta" creare un record omonimo all'interno del modulo Progetti e, nella stessa chiamata, popolare il campo "valore" con lo stesso valore della trattativa e collegare la trattativa al record creato.
 
 ## ES 4: 
-- Creare dei prodotti tramite una invokeUrl dal sito [https://jsonplaceholder.typicode.com/](https://fakestoreapi.com/)
-- In un modulo con più di 300 records (se non presenti crearli in modalita bulk) e recuperare una lista ordinata per data modifica dei record dal 201 al 250.
+- Creare dei prodotti tramite una invokeUrl dal sito [fakestoreapi](https://fakestoreapi.com/), utilizza una creazione massiva.
+- Nel modulo prodotti con almeno 300 records, recuperare una lista ordinata per data modifica dei record dal numero 201 al 250 (search o query COQL).

@@ -1,0 +1,18 @@
+reminderOfAandB(String idContact, Int Numero_A, Int Numero_B) {
+    // rec = zoho.crm.getRecordById("Contacts",idContact);
+
+    a = Numero_A;
+    b = Numero_B;
+
+    reminder = a % b;
+
+    mappa = Map();
+    mappa.put("Risultato","Il resto della divisione " + a + "/" + b + " è: " + reminder);
+
+    response = zoho.crm.updateRecord("Contacts",idContact,mappa);
+
+    info response;
+
+    return;
+
+}

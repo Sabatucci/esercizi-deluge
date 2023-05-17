@@ -1,0 +1,32 @@
+contacts = zoho.crm.getRelatedRecords("Contacts","Accounts",accountId);
+
+// info contacts;
+
+updateValues = list();
+
+for each  contact in contacts
+{
+	idContact = contact.get("id");
+	if (idContact != null)
+	{
+		map = Map();
+		map.put( "id", idContact);
+		map.put("status", "sospeso");
+		
+		updateValues.add(map);
+		
+		//res = zoho.crm.updateRecord("Contacts", idContact, {"status":"sospeso"});
+	}
+}
+
+if(updateValues.isEmpty() == false) {
+	res = zoho.crm.bulkUpdate("Contacts", updateValues);	
+} else {
+	info "Nessun contatto collegato all'azienda.";
+}
+
+info res;
+
+
+
+
